@@ -1,0 +1,72 @@
+@import "../variables";
+
+//
+// BODY COMPONENT
+//
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+
+  @media all and (min-width: $g-break-1) {
+    font-size: 14px;
+  }
+
+  @media all and (min-width: $g-break-3) {
+    font-size: 16px;
+  }
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: $g-font-main;
+  line-height: 1.4;
+  color: $g-color-text;
+}
+
+.body-content {
+  min-height: 100%;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.loading-line-container {
+  overflow: hidden;
+}
+
+.loading-line {
+  height: 2px;
+  background: $g-color-blue;
+  transform: translateX(100%);
+  width: 100%;
+  position: fixed;
+  display: none;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.loading-line--loading {
+  animation: shift-rightwards 1s ease-in-out infinite;
+  display: block;
+}
+
+.first-section {
+  margin-top: 2rem;
+}

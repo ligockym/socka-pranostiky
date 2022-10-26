@@ -1,0 +1,25 @@
+@import "../variables";
+
+//
+// SECTION COMPONENT
+//
+
+.section {
+  padding: 2rem 0;
+
+  @media all and (min-width: $g-break-1) {
+    padding: 4rem 0;
+  }
+}
+
+.section--half {
+  padding: 2rem 0;
+}
+
+.section--top-0 {
+  padding-top: 0;
+}
+
+.section--bottom-0 {
+  padding-bottom: 0;
+}

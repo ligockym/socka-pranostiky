@@ -1,0 +1,30 @@
+@import "../variables";
+
+//
+// SECTION INTRO
+//
+
+.s-intro {
+  background: $g-color-blue;
+  background-image: url('images/bubbles-5x5.svg'), url('images/bubbles-10x10.svg'), url('images/stripes.svg');
+  background-position: -1% 111%, 101% 92%, 50% 136%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 10%, 10%, 50%;
+  color: $g-color-white;
+  padding: 3rem 0;
+
+  @media all and (min-width: $g-break-1) {
+    padding: 4rem 0;
+  }
+}
+
+.s-intro__text-box {
+  background: $g-color-white;
+  padding: 1rem 1.75rem 1.5rem;
+  color: $g-color-text;
+}
+
+.s-intro__mouse {
+  animation: bounceInUpDown 1s 3s;
+  animation-fill-mode: forwards;
+}

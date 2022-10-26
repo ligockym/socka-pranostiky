@@ -1,0 +1,34 @@
+@import "../variables";
+
+//
+// BREADCRUMBS COMPONENT
+//
+
+$item-padding: 0.4rem;
+.breadcrumbs {
+  list-style: none;
+  font-size: $g-size-10;
+  font-weight: 600;
+  padding: 1.35rem 0;
+  position: relative;
+  z-index: 6;
+  margin: 0 -$item-padding;
+  text-align: left;
+
+  @media all and (min-width: $g-break-1) {
+    font-size: $g-size-12;
+  }
+
+  li {
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  > span {
+    padding: 0 $item-padding;
+  }
+}

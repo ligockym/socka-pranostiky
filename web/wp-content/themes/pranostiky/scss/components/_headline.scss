@@ -1,0 +1,30 @@
+@import "../variables";
+
+//
+// HEADLINE COMPONENT
+//
+
+.headline {
+  display: block;
+  font-weight: 600;
+  font-family: $g-font-second;
+  line-height: 1.2;
+
+  h1, h2, h3, h4, h5, h6 {
+    font: inherit;
+  }
+}
+
+.headline--type1 {
+  font-size: $g-size-36;
+  text-transform: uppercase;
+}
+
+.headline--type2 {
+  font-size: $g-size-30;
+}
+
+.headline--type3{
+  font-weight: bold;
+  font-size: $g-size-18;
+}

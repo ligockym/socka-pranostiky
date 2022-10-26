@@ -1,0 +1,55 @@
+@import "variables";
+
+//
+// FONTS COMPONENT
+//
+
+$avenir: 'fonts/avenir/';
+
+// FOR fontshop (counting number of page views)
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=fa839ec9-6f2d-460e-85db-f16a30dfc3b4&fontids=1475512,1475536,1475548");
+
+@font-face {
+  font-family: Avenir;
+  src: url($avenir + 'avenir.woff');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url($avenir + 'AvenirLTW02-85Book.eot');
+  src: url($avenir + 'AvenirLTW02-85Book.woff2') format('woff2'),
+  url($avenir + 'AvenirLTW02-85Book.woff') format('woff'),
+  url($avenir + 'AvenirLTW02-85Book.ttf') format('truetype'),
+  url($avenir + 'AvenirLTW02-85Book.svg#AvenirLTW02-85Heavy') format('svg'),
+  url($avenir + 'AvenirLTW02-85Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url($avenir + 'AvenirLTW02-65Medium.eot');
+  src: url($avenir + 'AvenirLTW02-65Medium.woff2') format('woff2'),
+  url($avenir + 'AvenirLTW02-65Medium.woff') format('woff'),
+  url($avenir + 'AvenirLTW02-65Medium.ttf') format('truetype'),
+  url($avenir + 'AvenirLTW02-65Medium.svg#AvenirLTW02-65Medium') format('svg'),
+  url($avenir + 'AvenirLTW02-65Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url($avenir + 'AvenirLTW02-85Heavy.eot');
+  src: url($avenir + 'AvenirLTW02-85Heavy.woff2') format('woff2'),
+  url($avenir + 'AvenirLTW02-85Heavy.woff') format('woff'),
+  url($avenir + 'AvenirLTW02-85Heavy.ttf') format('truetype'),
+  url($avenir + 'AvenirLTW02-85Heavy.svg#AvenirLTW02-85Heavy') format('svg'),
+  url($avenir + 'AvenirLTW02-85Heavy.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+

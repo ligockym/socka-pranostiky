@@ -1,0 +1,13 @@
+@import "../variables";
+
+//
+// FOOTER COMPONENT
+//
+
+.footer {
+  font-size: $g-size-10;
+
+  @media all and (min-width: $g-break-2) {
+    font-size: $g-size-12;
+  }
+}

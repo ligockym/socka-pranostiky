@@ -1,0 +1,28 @@
+@import "../variables";
+
+//
+// PAGE COMPONENT
+//
+
+.page {
+
+}
+
+.page__intro-photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 8rem;
+
+  @media all and (min-width: $g-break-1) {
+    height: 16rem;
+  }
+
+  @media all and (min-width: $g-break-2) {
+    height: 20rem;
+  }
+
+  @media all and (min-width: $g-break-3) {
+    height: 25rem;
+  }
+}

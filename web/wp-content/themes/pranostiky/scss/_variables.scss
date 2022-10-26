@@ -1,0 +1,45 @@
+//
+// VARIABLES
+//
+
+$g-color-blue: #00B8BB;
+$g-color-white: #fff;
+$g-color-blue-text: #4A5672;
+$g-color-text: $g-color-blue-text;
+$g-color-gray-1: #EBF0FA;
+
+$g-font-main: 'Barlow', sans-serif;
+$g-font-second: 'Barlow Semi Condensed', sans-serif;
+$g-font-icons: 'fontawesome';
+
+$g-break-1: 768px;
+$g-break-2: 1170px;
+$g-break-3: 1600px;
+
+$g-size-0: 0;
+$g-size-8: 0.625rem;
+$g-size-10: 0.75rem;
+$g-size-12: 0.875rem;
+$g-size-14: 0.9375rem;
+$g-size-16: 1rem;
+$g-size-18: 1.25rem;
+$g-size-20: 1.5rem;
+$g-size-24: 1.75rem;
+$g-size-30: 2rem;
+$g-size-36: 2.5rem;
+$g-size-96: 7.5rem;
+
+$g-text-sizes: (
+0: $g-size-0,
+8: $g-size-8,
+10: $g-size-10,
+12: $g-size-12,
+14: $g-size-14,
+16: $g-size-16,
+18: $g-size-18,
+20: $g-size-20,
+24: $g-size-24,
+30: $g-size-30,
+36: $g-size-36,
+96: $g-size-96,
+);

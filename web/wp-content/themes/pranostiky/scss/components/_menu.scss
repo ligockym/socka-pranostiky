@@ -1,0 +1,111 @@
+@import "../variables";
+
+//
+// MAIN NAV
+//
+
+.menu {
+  list-style: none;
+  flex: 1 0 auto;
+  cursor: pointer;
+
+  @media all and (min-width: $g-break-1) {
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+  }
+}
+
+.menu-item__text {
+  display: none;
+}
+
+.menu--opened {
+  pointer-events: initial;
+  $initialDelay: 0.3s;
+
+  .menu-item {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    visibility: inherit;
+    opacity: 1;
+  }
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media all and (min-width: $g-break-1) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-family: $g-font-second;
+    padding: 1rem .5rem;
+    font-size: $g-size-16;
+    transition: .3s all ease-in-out;
+    position: relative;
+
+    @media all and (min-width: $g-break-1) {
+      padding: 1.75rem .5rem;
+      margin: 0 .7rem;
+      font-size: $g-size-16;
+    }
+
+    .top-bar--scrolled & {
+
+      @media all and (min-width: $g-break-1) {
+        padding: 1.2rem .5rem;
+      }
+    }
+
+    &:hover {
+      color: $g-color-blue;
+    }
+  }
+}
+
+.menu-item-has-children > a {
+  margin-right: 1rem;
+
+  &::before {
+    content: '\f107';
+    position: absolute;
+    right: -.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $g-font-icons;
+    vertical-align: middle;
+  }
+}
+
+.sub-menu {
+  display: none;
+  background: $g-color-white;
+
+  @media all and (min-width: $g-break-1) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+
+  }
+
+  .menu-item a {
+    padding: .5rem 1rem;
+
+    @media all and (min-width: $g-break-1) {
+      padding: 1rem .5rem;
+    }
+  }
+
+  .menu-item:hover & {
+    display: block;
+  }
+}

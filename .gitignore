@@ -1,4 +1,5 @@
 .idea
 venv
-
+web/wp-content/interactive-maps
 __pycache__
+node_modules

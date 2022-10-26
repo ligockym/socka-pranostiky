@@ -1,0 +1,15 @@
+
+# BEGIN WordPress
+# Smernice (riadky) medzi  `BEGIN WordPress` a `END WordPress` sú
+# dynamicky generované a mali by byť upravené iba pomocou filtrov WordPress.
+# Akékoľvek zmeny smerníc medzi týmito značkami sa prepíšu.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

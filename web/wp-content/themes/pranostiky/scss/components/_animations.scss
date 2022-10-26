@@ -1,0 +1,269 @@
+@import "../variables";
+
+//
+// ANIMATIONS
+//
+
+// Hide all elements that are going to be animated
+.animate-ready {
+  visibility: hidden;
+}
+
+.animate-disabled * {
+  visibility: inherit;
+}
+
+// Element whose animation started
+//---------
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  visibility: inherit;
+}
+
+// Fade InUpLight animation
+//---------
+.fadeInUpLight {
+  animation-name: fadeInUpLight;
+}
+
+.fadeInUpLighter {
+  animation-name: fadeInUpLighter;
+}
+
+.fadeInLeftRight {
+  animation-name: fadeInLeftRight;
+}
+
+.fadeInRightLeft {
+  animation-name: fadeInRightLeft;
+}
+
+//
+// ANIMATIONS' KEYFRAMES
+//
+
+// Used for animating elements when scrolling down the page.
+@keyframes fadeInUpLight {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+// Used for animating elements when scrolling down the page.
+@keyframes fadeInUpLighter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes main-nav-top {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes main-nav-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+// REVERSE
+@keyframes main-nav-top-reverse {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes main-nav-bottom-reverse {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeInLeftRight {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRightLeft {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes category-nav-line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes bottom-bar-central {
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes intro-products-icon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: translateY(3rem) rotate(180deg);
+  }
+}
+
+@keyframes icon-circle-thin {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes variationsFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes variationsFadeOut {
+  0% {
+    display: flex;
+    opacity: 1;
+  }
+  99% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes loadMoreDot {
+  0% {
+    transform: scale(.75);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.75);
+  }
+}
+
+@keyframes bounceInUpDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes shift-rightwards {
+  0% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%)
+  }
+
+  40% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%)
+  }
+
+  60% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%)
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%)
+  }
+}

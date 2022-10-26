@@ -1,0 +1,46 @@
+/*
+Theme Name: Pranostiky
+Author: Marián Ligocký
+Author URI: http://marianligocky.sk/
+*/
+
+
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/bootstrap-custom";
+@import "fonts";
+
+@import "components/body";
+@import "components/section";
+@import "components/headline";
+@import "components/utilities";
+@import "components/menu";
+@import "components/animations";
+@import "components/image";
+@import "components/button";
+@import "components/page";
+@import "components/footer";
+@import "components/breadcrumbs";
+@import "components/top-bar";
+@import "components/modal";
+
+// BLOCKS
+@import "blocks/map-block";
+@import "blocks/text-box";
+@import "blocks/basic-blocks";
+
+// SECTIONS
+@import "section/s-intro";
+
+
+// WOOCOMMERCE
+
+// PAGES
+
+// Utilities
+@import "components/text";
+
+#wpadminbar {
+  display: none;
+}
