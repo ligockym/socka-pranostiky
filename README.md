@@ -5,7 +5,7 @@
 2. Web postavený na WordPresse, ktorý prezentuje výsledky, demo: [pranostiky.marianligocky.sk](https://pranostiky.marianligocky.sk/)
 
 ## Výsledky
-\3. miesto krajské kolo 2019/2020
+3. miesto krajské kolo 2019/2020
 
 ## Dáta
 Využili sme dáta z projektu [CarpatClima](https://www.carpatclim-eu.org/), ktoré obsahujú historické informácie o teplote, vlhkosti, oblačnosti, snehovej prikrývke a pod. z celej oblasti karpatského oblúka (Slovensko, Maďarsko, Rumunsko, Ukrajina) od roku 1960.
@@ -19,3 +19,5 @@ Na týchto dátach sme testovali nasledujúce pranostiky:
 - Počet snehových dní za rok. [Výsledky](https://pranostiky.marianligocky.sk/pocet-snehovych-dni/)
 
 ## Demo
+https://user-images.githubusercontent.com/8171427/197995807-a13f89e7-a213-4b4d-b02a-c5ea5684b191.mp4
+
